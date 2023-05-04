@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/Logos/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <!-- Components -->
+    <link rel="import" href="components/banner.html">
+    <title>Pizza Hot </title>
+</head>
+
+<body>
+
+    <!-- Header Desktop -->
+
+    <header class="header">
+        <div class="header-desktop d-none d-lg-flex">
+            <div class="header-desktop-navbar">
+                <div class="header-desktop-navbar-logo">
+                    <img src="assets/img/Logos/pizza-hot-logo.png" alt="pizza">
+                </div>
+                <div class="header-desktop-navbar-nav">
+                    <ul>
+                        <li>
+                            <a class="navbar-link" href="#promocoes"> Promoções </a>
+                        </li>
+                        <li>
+                            <a class="navbar-link" href="#salgadas"> Pizzas Salgadas </a>
+                        </li>
+                        <li>
+                            <a class="navbar-link" href="#doces"> Pizzas Doces </a>
+                        </li>
+                        <li>
+                            <a class="navbar-link" href="#hamburgueria"> Hambúrgueria </a>
+                        </li>
+                        <li>
+                            <a class="navbar-link" href="#porcoes"> Porções </a>
+                        </li>
+                        <li>
+                            <a class="navbar-link" href="#bebidas"> Bebidas </a>
+                        </li>
+                        <li>
+                            <a class="navbar-link" href="#about"> Sobre Nós </a>
+                        </li>
+                        <li>
+                            <a class="navbar-link" href="#contato"> Contato </a>
+                        </li>
+                    </ul>
+
+                    <!-- phones notebook -->
+                    <div class="phones">
+                        <p> <i class="ri-phone-line"></i> <a href="#"> (31) 3333-3333</a></p>
+                        <p> <i class="ri-whatsapp-line whatsapp"></i> <a href="#"> (31) 3333-3333</a> </p>
+                    </div>
+                </div>
+                <div class="header-desktop-navbar-phone">
+                    <p> <i class="ri-phone-line"></i> <a href="#"> (31) 3333-3333</a></p>
+                    <p> <i class="ri-whatsapp-line whatsapp"></i> <a href="#"> (31) 3333-3333</a> </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- header mobile -->
+        <div class="header-mobile d-lg-none d-flex">
+            <div class="header-mobile-navbar">
+                <div class="menu">
+                    <i class="ri-menu-2-line"></i>
+                    Menu
+                </div>
+                <div class="logo">
+                    <img src="assets/img/Logos/logo-mobile.png" alt="pizza">
+                </div>
+                <div class="cart-button">
+                    <span>0</span>
+                    <span class="material-icons">shopping_cart</span>
+                </div>
+            </div>
+            <div class="header-mobile-phones">
+                <div class="swiper swiper-phones">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <p> <i class="ri-phone-line"></i> <a href="#"> (31) 3333-3333</a></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p> <i class="ri-whatsapp-line whatsapp"></i> <a href="#"> (31) 3333-3333</a> </p>
+                        </div>
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar d-lg-none">
+        <ul class="sidebar-list">
+            <li class="sidebar-list-item">
+                <a class="navbar-link" href="#promocoes"> Promoções </a>
+            </li>
+            <li class="sidebar-list-item">
+                <a class="navbar-link" href="#salgadas"> Pizzas Salgadas </a>
+            </li>
+            <li class="sidebar-list-item">
+                <a class="navbar-link" href="#doces"> Pizzas Doces </a>
+            </li>
+            <li class="sidebar-list-item">
+                <a class="navbar-link" href="#hamburgueria"> Hambúrgueria </a>
+            </li>
+            <li class="sidebar-list-item">
+                <a class="navbar-link" href="#porcoes"> Porções </a>
+            </li>
+            <li class="sidebar-list-item">
+                <a class="navbar-link" href="#bebidas"> Bebidas </a>
+            </li>
+            <li class="sidebar-list-item">
+                <a class="navbar-link" href="#about"> Sobre Nós </a>
+            </li>
+            <li class="sidebar-list-item">
+                <a class="navbar-link" href="#contato"> Contato </a>
+            </li>
+
+        </ul>
+    </div>
+
+    <!-- Banners -->
+    <section class="banner">
+        <div class="swiper swiper-banners">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="w-100 d-none d-lg-block" src="assets/img/banners/banner-1-desktop.jpeg"
+                        alt="banner 1 desktop">
+                    <img class="w-100 d-block d-lg-none" src="assets/img/banners/banner-1-mobile.jpeg"
+                        alt="banner 1 mobile">
+
+                    <div class="banner-card">
+                        <h2 class="title"> Descubra os sabores irresistíveis da Pizza Hot </h2>
+                        <p class="subtitle"> Desde os clássicos até os mais criativos, temos uma pizza para cada
+                            paladar.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="w-100 d-none d-lg-block" src="assets/img/banners/banner-2-desktop.jpeg"
+                        alt="banner 2 desktop">
+                    <img class="w-100 d-block d-lg-none" src="assets/img/banners/banner-2-mobile.jpeg"
+                        alt="banner 2 mobile">
+
+                    <div class="banner-card">
+                        <h2 class="title"> Pizza Hot - A pizzaria que vai te surpreender </h2>
+                        <p class="subtitle"> Sabor, qualidade e inovação em cada fatia. </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="w-100 d-none d-lg-block" src="assets/img/banners/banner-5-desktop.jpg"
+                        alt="banner 5 desktop">
+                    <img class="w-100 d-block d-lg-none" src="assets/img/banners/banner-5-mobile.jpg"
+                        alt="banner 5 mobile">
+
+                    <div class="banner-card">
+                        <h2 class="title"> Combo: Hambúrguer Com Fritas + Refri </h2>
+                        <p class="subtitle"> O combo perfeito: sabor, praticidade e economia. Um delicioso Hambúrguer
+                            com fritas crocantes + refri 350(ml) por: <span> R$ 35.90 </span> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+    <main>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 main-title">
+                    <h1 class="main-title">
+                        <span class="d-none d-lg-block">Cardápio </span>
+                        <span class="d-block d-lg-none"> Cardádpio</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="promocoes">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="title">Promoções</h2>
+                </div>
+                <div id="promocao" class="products-area">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container" id="salgadas">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="title">Pizzas Tradicionais</h2>
+                </div>
+                <div id="tradicionais" class="products-area">
+                    <!--
+                    <div class="products">
+                        <div class="products-item">
+                            <a href="" data-jso="">
+                                <div class="products-item-img">
+                                    <img src="assets/img/pizzas/salgadas/mussarela.png" alt="">
+                                </div>
+                                <div class="products-item-add">
+                                    +
+                                </div>
+                            </a>
+                            <div class="products-item-price">
+                                R$ 29,90
+                            </div>
+                            <div class="products-item-name">
+                                Mussarela
+                            </div>
+                            <div class="products-item-description">
+                                Queijo mussarela e molho de tomate.
+                            </div>
+                        </div>
+                    </div>
+                  -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="title">Pizzas Especiais</h2>
+                </div>
+                <div id="especiais" class="products-area">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container" id="doces">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="title">Pizzas Doces</h2>
+                </div>
+                <div id="pizzas-doces" class="products-area">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container" id="hamburgueria">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="title">Hambúrgueres</h2>
+                </div>
+                <div id="burgues" class="products-area">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container" id="porcoes">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="title">Porções</h2>
+                </div>
+                <div id="list-porcoes" class="products-area">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container" id="bebidas">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="title">Bebidas</h2>
+                </div>
+                <div id="drinks" class="products-area">
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="assets/img/pngegg (1).png" alt="">
+        </div>
+        <div class="about-text">
+            <p>
+                Nosso principal objetivo é proporcionar aos nossos clientes uma experiência única e inesquecível. Desde
+                a
+                preparação artesanal da massa até a seleção dos melhores ingredientes, tudo é feito com muito cuidado e
+                atenção aos detalhes para garantir que cada pizza seja uma obra-prima.
+            </p>
+
+            <p>
+                Nosso cardápio é cuidadosamente elaborado para atender aos mais diversos paladares. Temos opções
+                clássicas
+                como a Margherita e a Quatro Queijos, além de pizzas exclusivas como a de Frango com Catupiry e a de
+                Camarão com Catupiry.
+            </p>
+
+            <p>
+                Além disso, nossos chefs estão sempre em busca de novas combinações de sabores, para que você possa
+                experimentar algo diferente a cada visita. Nossos ingredientes são cuidadosamente selecionados e
+                frescos,
+                garantindo a qualidade e o sabor único de cada pizza.
+            </p>
+
+            <p>
+                Na Pizza Hot, valorizamos o conforto e a comodidade de nossos clientes. Por isso, oferecemos a opção de
+                delivery para que você possa desfrutar do sabor incrível de nossas pizzas no conforto de sua casa.
+            </p>
+
+            <p>
+                Venha nos visitar e experimente o sabor da verdadeira pizza artesanal. A Pizza Hot espera por você!
+            </p>
+
+        </div>
+    </section>
+
+    <section class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col-lg-3 col-12 service-card">
+                <div class="service-card-img">
+                    <img src="assets/img/Pizza maker-bro.svg" alt="">
+                </div>
+                <div class="service-card-body">
+                    <h3>Preparação artesanal </h3>
+                    <p>
+                        Nós nos orgulhamos de preparar nossas pizzas à mão, com técnicas artesanais que garantem uma
+                        massa macia e crocante.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-12 service-card">
+                <div class="service-card-img">
+                    <img src="assets/img/Shawarma-rafiki.svg" alt="">
+                </div>
+                <div class="service-card-body">
+                    <h3> Ingredientes selecionados </h3>
+                    <p>
+                        Na Pizza Hot, utilizamos somente ingredientes selecionados de alta qualidade, garantindo o sabor
+                        e frescor em cada pizza que preparamos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-12 service-card">
+                <div class="service-card-img">
+                    <img src="assets/img/Pizza maker-pana.svg" alt="">
+                </div>
+                <div class="service-card-body">
+                    <h3> Chefes especializados </h3>
+                    <p>
+                        Nossos chefs são altamente qualificados e apaixonados pelo que fazem, criando combinações de
+                        sabores únicas e deliciosas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-12 service-card">
+                <div class="service-card-img">
+                    <img src="assets/img/Take Away-amico.svg" alt="">
+                </div>
+                <div class="service-card-body">
+                    <h3> Entrega rápida </h3>
+                    <p>
+                        Valorizamos o seu tempo e nos comprometemos em entregar suas pizzas quentes e frescas o mais
+                        rápido possível, para que você possa aproveitar o sabor incrível de nossas pizzas no conforto de
+                        sua casa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid footer" id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="footer-logo">
+                    <img src="assets/img/Logos/pizza-hot-logo.png" alt="pizza hot">
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-social-networks">
+                    <a class="btn-facebook" href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a class="btn-instagram" href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a class="btn-whatsapp" href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="location container-custom">
+            <div class="col-12">
+                <h2> <i class="ri-map-pin-line"></i> Nossas Unidades </h2>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="tabs">
+                        <div class="d-flex justify-content-lg-center">
+                            <select class="tabs-select">
+                                <option value="bh">Belo Horizonte</option>
+                                <option value="sp">São Paulo</option>
+                                <option value="rj">Rio de Janeiro</option>
+                            </select>
+                        </div>
+                        <div class="tabs-content mt-3">
+                            <div class="tabs-panel active" id="bh">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="assets/img/stores/pizzeria-1.jpg" alt="Unidade BH">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3>Unidade Belo Horizonte</h3>
+                                        <p>Rua das Flores, 123 - Centro</p>
+                                        <p><i class="ri-phone-line"></i> (31) 1234-5678</p>
+                                        <p>Horário de Atendimento:</p>
+                                        <ul>
+                                            <li>Segunda a Sexta: 08h às 20h</li>
+                                            <li>Sábado: 08h às 18h</li>
+                                            <li>Domingo: Fechado</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs-panel" id="sp">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="assets/img/stores/pizzeria-2.jpg" alt="Unidade São Paulo">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3>Unidade São Paulo</h3>
+                                        <p>Rua das Árvores, 456 - Jardins</p>
+                                        <p><i class="ri-phone-line"></i> (11) 1234-5678</p>
+                                        <p>Horário de Atendimento:</p>
+                                        <ul>
+                                            <li>Segunda a Sexta: 09h às 21h</li>
+                                            <li>Sábado: 09h às 19h</li>
+                                            <li>Domingo: Fechado</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs-panel" id="rj">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="assets/img/stores/pizzeria-3.jpg" alt="Unidade Rio de Janeiro">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3>Unidade Rio de Janeiro</h3>
+                                        <p>Avenida das Praias, 789 - Copacabana</p>
+                                        <p><i class="ri-phone-line"></i> (21) 1234-5678</p>
+                                        <p>Horário de Atendimento:</p>
+                                        <ul>
+                                            <li>Segunda a Sexta: 10h às 22h</li>
+                                            <li>Sábado: 10h às 20h</li>
+                                            <li>Domingo: 10h às 18h</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="copyright">
+            <p>© Pizza Hot - <span id="currentYear"></span> | Todos os direitos reservados | Desenvolvido por Lucas Martins</p>
+         </div>
+    </footer>
+
+    <!-- Carrinho de Compra-->
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer d-lg-none">
+                <span class="material-icons">close</span>
+            </div>
+            <h2>Seu Pedido </h2>
+            <div class="cart">
+               
+            </div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto (-10%)</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span class="price-final">R$ --</span>
+                </div>
+                <div class="cart--finalizar">Finalizar a compra</div>
+
+                <div class="cart--add-more-products"> 
+                    <a href="#" class="link"> Continuar Comprando </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Modal Pedido -->
+    <div class="productWindowArea">
+        <div class="productWindowBody">
+            <!-- 
+                Este botão é o cancelar do mobile (mostrar com F12) a ação do cancelar
+                da janela modal vai ser igual, logo vamos fazer uma função
+            -->
+            <div class="productInfo-cancelMobileButton">Voltar</div>
+            <div class="productBig">
+                <img src="" />
+            </div>
+            <div class="productInfo">
+                <h1>--</h1>
+                <div class="productInfo-desc">--</div>
+                <div class="productInfo-sizearea">
+                    <div class="productInfo-sector">Tamanho: </div>
+                    <div class="productInfo-sizes"> 
+                    </div>
+                </div>
+                <div class="productInfo-flavorarea">
+                    <div class="productInfo-sector">Sabores: </div>
+                    <div class="productInfo-flavors"> 
+                    </div>
+                </div>
+                <div class="productInfo-pricearea">
+                    <div class="productInfo-sector">Preço</div>
+                    <div class="productInfo-price">
+                        <div class="productInfo-actualPrice">R$ <span> -- </span> </div>
+                        <div class="productInfo-qtarea">
+                            <button class="productInfo-qtmenos">-</button>
+                            <div class="productInfo-qt">1</div>
+                            <button class="productInfo-qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="productInfo-addButton">Adicionar ao carrinho</button>
+                <div class="productInfo-cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-button-desktop">
+        <img src="assets/img/icons/icon-cart-48.png" alt="icon cart"> 
+        <div class="cart-button-desktop-badge"> </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="scrollTop">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path
+                    d="M12.0001 4.83594L5.79297 11.043L7.20718 12.4573L12.0001 7.66436L16.793 12.4573L18.2072 11.043L12.0001 4.83594ZM12.0001 10.4858L5.79297 16.6929L7.20718 18.1072L12.0001 13.3143L16.793 18.1072L18.2072 16.6929L12.0001 10.4858Z"
+                    fill="#fff"></path>
+            </svg> Topo
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>   
+    <script src="assets/js/json.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+
+</body>
+
+</html>

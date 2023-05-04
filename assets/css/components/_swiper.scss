@@ -1,0 +1,96 @@
+@import '../abstract/variaveis';
+
+.swiper {
+    &-pagination-bullet {
+        width: 13px;
+        height: 13px;
+        background: rgb(255, 255, 255);
+        opacity: 1;
+
+        &-active {
+            background: $yellow;
+            border: solid 1px $yellow;
+        }
+    }
+
+}
+
+
+.swiper-phones{
+
+    position: relative;
+
+    .swiper-slide{
+        display: flex;
+        justify-content: center;
+        color: $white;
+        height: 50px;
+
+        p{
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            margin: 0;
+
+
+            i{
+                font-size: 24px;
+
+                &.whatsapp{
+                    color: $whatsapp-color;
+                }
+            }
+
+            a{
+                margin-left: 10px;
+                text-decoration: none;
+                color: $white;
+            }
+        }
+    }
+    
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: $white;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    font-size: 18px;
+    line-height: 1;
+    margin-top: -15px;
+
+    &:after {
+        font-family: "swiper-icons";
+        font-size: 20px;
+        font-weight: normal;
+        text-transform: none !important;
+        letter-spacing: 0;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+.swiper-button-prev {
+
+    &:after {
+        content: "prev";
+        position: absolute;
+        left: 20px;
+        top: 6px;
+    }
+}
+
+.swiper-button-next {
+
+    &:after {
+        content: "next";
+        position: absolute;
+        right: 20px;
+        top: 5px
+    }
+}
+

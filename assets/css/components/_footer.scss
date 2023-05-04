@@ -1,0 +1,100 @@
+@import '../abstract/variaveis';
+
+
+@mixin social-networks {
+    text-decoration: none;
+    height: 52px;
+    width: 52px;
+    border: 1px solid #969696;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    i {
+        font-size: 25px;
+        color: #969696;
+    }
+}
+
+.footer {
+    background-color: #2C2C2C;
+    color: $white;
+    padding: 80px 0;
+
+    &-logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &-social-networks {
+        margin: 2rem 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+        .btn-facebook {
+            @include social-networks();
+            &:hover {
+                background: $facebook-color;
+                border: 1px solid $facebook-color;
+
+                i {
+                    color: $white;
+                }
+            }
+        }
+
+        .btn-instagram {
+            @include social-networks();
+            &:hover {
+                background: $instagram-color;
+                border: none;
+
+                i {
+                    color: $white;
+                }
+            }
+        }
+
+        .btn-whatsapp{
+            @include social-networks();
+            &:hover {
+                background: $whatsapp-color;
+                border: 1px solid $whatsapp-color;
+
+                i {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+
+    #copyright{
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+
+        p{
+            font-size: 14px;
+            color: $gray;
+        }
+    }
+}
+
+
+@media  (max-width: 992px) {
+
+    .footer{
+        #copyright{
+            P{
+                text-align: center;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,130 @@
+@import '../abstract/variaveis';
+
+
+
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 0;
+    background-color: $primary-color;
+    color: #fff;
+
+    &-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    &-text{
+
+        font-size: 18px;
+        text-align: justify;
+        padding: 20px 100px;
+        align-self: center;
+
+    }
+}
+
+
+.service-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+
+  &-img{
+    height: 230px;
+
+    img{
+      width: 220px;
+      height: 220px;
+    }
+  }
+
+  &-body{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 150px;
+    padding: 0 20px;
+
+    h3{
+      font-size: 14px;
+      font-family: $fonte-hepta;
+      font-weight: 900;
+    }
+  
+    p{
+      text-align: center;
+      font-size: 14px;
+      color: $gray;
+      line-height: 1.2;
+    }
+
+  }
+
+  
+}
+
+
+@media screen and (min-width: 993px) and (max-width: 1320px) {
+    .about{
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .service-card{
+      &-body{
+        h3{
+          font-size: 13px;
+        }
+      }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .about{
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "texto"
+        "imagem";
+  
+    &-img {
+      grid-area: imagem;
+      justify-self: center;
+
+      img{
+        padding: 10px 20px;
+      }
+    }
+  
+    &-text {
+      grid-area: texto;
+      padding: 0 25px;
+      font-size: 16px;
+    }
+
+    }
+
+    .service-card{
+      padding: 15px 0;
+      &-body{
+        height: auto;
+        h3{
+          font-size: 18px;
+        }
+
+        p{
+          font-size: 16px;
+        }
+      }
+    }
+  }

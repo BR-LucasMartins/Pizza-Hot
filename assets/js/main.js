@@ -423,6 +423,7 @@ cartButtonMobile.querySelector('span').textContent = request.length
 
 function qdtItems(){
   document.querySelector('.cart-button-desktop-badge').textContent = request.length;
+  cartButtonMobile.querySelector('.badge-mobile').textContent = request.length
 }
 
 const btnAddMoreProducts = document.querySelector('.cart--add-more-products');
